@@ -1,6 +1,6 @@
 # DWB-Modules
 
-**Selected feature modules from DWB-Net for underwater object detection.** This release does not include the complete detector, training or evaluation pipelines, or pretrained weights.
+**Selected feature modules from DWB-Net for underwater object detection.**
 
 [Highlights](#highlights) · [Modules](#repository-structure) · [Installation](#installation) · [Quick Start](#quick-start) · [Datasets](#datasets) · [Paper](#paper) · [Citation](#citation) · [License](#license)
 
@@ -67,9 +67,8 @@ To apply the feature module to a BCHW feature tensor from your own code:
 import torch
 from models.dwm import DWM
 
-module = DWM(channels=64).eval()
-
 def enhance_features(x):
+    module = DWM(channels=x.shape[1]).to(x.device).eval()
     with torch.inference_mode():
         return module(x)
 ```
