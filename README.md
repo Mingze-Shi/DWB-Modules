@@ -110,12 +110,6 @@ If you use this code in research, please cite this repository using its title, a
 
 This source-available release is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). Use is limited to the purposes permitted by that license. Commercial uses outside those permissions require separate authorization from the copyright holders.
 
-Redistributed copies must retain the license terms or their URL and the following notice:
-
-Required Notice: DWB-Modules provides selected feature modules from DWB-Net.
-
-The research citation request above is separate from the license terms. Third-party datasets remain subject to their own terms.
-
 ## Contact
 
 Use the repository's Issues page for implementation questions and bug reports.
